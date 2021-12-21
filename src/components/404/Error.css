@@ -1,0 +1,53 @@
+#error{
+    background-image: url(https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden !important;
+}
+
+#errcontent{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 15vh;
+    z-index: 1;
+}
+
+#params {
+    text-decoration: underline red;
+    font-family: "DMR-S", serif;
+}
+
+#goback{
+    color: RED;
+}
+
+#goback:visited, #goback:checked{
+    color: red;
+}
+
+
+@media only screen and (max-width: 600px){
+    #error{
+        overflow-y: hidden;
+    }
+    #errcontent{
+ 
+        height: 100vh;
+        width: 100vw;
+        z-index: 1;
+        inline-size: 100vw;
+    }
+    #player{
+        z-index: 0;
+        position: absolute;
+    }
+}
