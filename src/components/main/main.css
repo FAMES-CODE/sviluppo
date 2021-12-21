@@ -18,12 +18,11 @@ html {
 body {
   overflow-x: hidden;
 }
-@media only screen and (max-width: 600px) {
-  *{
+@media only screen and (max-width: 1000px) {
 
-  }
   body {
     overflow-x: hidden;
+    z-index: -1;
     
   }
   #maincontainer {
@@ -43,6 +42,7 @@ body {
     padding-right: 15vw;
     z-index: 1;
     overflow-y: hidden;
+    width: 70VW;
   }
 
   #mainbody {
@@ -122,6 +122,7 @@ body {
     text-align: center;
     background-color: #f44336;
     position: absolute;
+  
   }
 
   #aboutimg {
@@ -140,7 +141,7 @@ body {
     z-index: 1;
     right: -5vw;
     margin-top: -36vh;
-
+    z-index: 0;
     backdrop-filter: brightness(50%);
   }
 
@@ -170,6 +171,7 @@ body {
   #s2 > img {
     position: absolute;
     top: 180vh;
+    z-index: 0;
   }
 
   #maincontainer > #s2 > #s2cont {
@@ -177,6 +179,8 @@ body {
     justify-content: space-evenly;
     color: white;
     margin-top: 0vh;
+    
+  
   }
 
   #maincontainer > #s2 > #s2cont > #s2text {
@@ -188,16 +192,18 @@ body {
     width: 100vw;
     backdrop-filter: brightness(50%);
     height: 100vh;
+ 
   }
   #s2text > h1 {
     color: #f44336;
     inline-size: 50vw;
+
   }
 
   #maincontainer > #s2 > #s2cont > #s2text > p {
     top: 200vh;
     margin-left: 0vw;
-    z-index: 1;
+
     line-height: 5vh;
     letter-spacing: 2px;
     inline-size: 50vw;
@@ -205,10 +211,11 @@ body {
   }
 
   #maincontainer > #s2 > #s2cont > #skill > #skills {
-    position: relative;
     margin-left: 30vw;
     height: 60vh;
     margin-top: 20vh;
+    
+    
   }
 
   /* S3 */
